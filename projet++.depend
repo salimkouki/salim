@@ -1,4 +1,43 @@
 # depslib dependency file v1.0
-1645110698 source:c:\users\kouki\onedrive\bureau\irm1.2 sem1\prog c\projet++\main.cpp
+1645917656 source:c:\users\kouki\onedrive\bureau\irm1.2 sem1\prog c\projet++\main.cpp
 	<iostream>
+	"groupe.h"
+	"groupemodule.h"
+	"matiere.h"
+	"note.h"
+	"personne.h"
+	"enseignant.h"
+	"etudiant.h"
+
+1645535294 c:\users\kouki\onedrive\bureau\irm1.2 sem1\prog c\projet++\groupe.h
+	<iostream>
+	<vector>
+	"personne.h"
+	"etudiant.h"
+	"enseignant.h"
+	"matiere.h"
+	"groupemodule.h"
+	"groupe.h"
+
+1645534736 c:\users\kouki\onedrive\bureau\irm1.2 sem1\prog c\projet++\personne.h
+	<iostream>
+
+1645917803 c:\users\kouki\onedrive\bureau\irm1.2 sem1\prog c\projet++\etudiant.h
+	"personne.h"
+
+1645534908 c:\users\kouki\onedrive\bureau\irm1.2 sem1\prog c\projet++\enseignant.h
+	"personne.h"
+
+1645538782 c:\users\kouki\onedrive\bureau\irm1.2 sem1\prog c\projet++\matiere.h
+	<iostream>
+	"personne.h"
+
+1645912694 c:\users\kouki\onedrive\bureau\irm1.2 sem1\prog c\projet++\groupemodule.h
+	<iostream>
+	"matiere.h"
+
+1645539822 c:\users\kouki\onedrive\bureau\irm1.2 sem1\prog c\projet++\note.h
+	<iostream>
+	"personne.h"
+	"personne.h"
 

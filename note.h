@@ -1,5 +1,7 @@
 #ifndef NOTE_H_INCLUDED
 #define NOTE_H_INCLUDED
+#include <iostream>
+
 #include"personne.h"
 #include"personne.h"
 class note{
@@ -14,11 +16,15 @@ public :
     etu = e ;
     notee = n ;
     type = t ;}
-    ostream& operator<<( A& x )
+friend    ostream& operator<<( ostream& out , const note& n  )
 {
-        ostream& out;
-	out << x.y << endl;
+
+	out << n.notee <<n.type;
 	return out;
+}
+float moymat (float nbnote){
+return notee*mat.coef/nbnote;
+cout<<notee*mat.coef/nbnote;
 }
     };
 

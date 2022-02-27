@@ -1,27 +1,26 @@
 #ifndef GROUPEMODULE_H_INCLUDED
 #define GROUPEMODULE_H_INCLUDED
+#include <iostream>
 #include"matiere.h"
 class groupemodule {
 public :
     string idgm;
     string nomgmt;
     float coefgm;
-    matiere listemat[50];
+    vector<matiere> listemat;
     groupemodule(){}
-    groupemodule(string id , string n , float c , matiere l[50]){
+    groupemodule(string id , string n , float c , vector<matiere> l){
     idgm=id;
     nomgmt=n ;
     coefgm=c;
-    for (int i=0;i<50;i=i+1){
-        listemat[i]=l[i];
+    listemat=l;
     }
-    }
-ostream& operator<<( A& x )
+friend ostream& operator<<( ostream& out , const groupemodule& g )
 {
-        ostream& out;
-	out << x.y << endl;
+	out << g.idgm << g.nomgmt<< g.coefgm;
 	return out;
 }
 };
+
 
 #endif // GROUPEMODULE_H_INCLUDED

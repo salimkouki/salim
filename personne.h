@@ -1,5 +1,8 @@
 #ifndef PERSONNE_H_INCLUDED
 #define PERSONNE_H_INCLUDED
+#include <iostream>
+using namespace std;
+
 
 class personne {
 public:
@@ -14,42 +17,15 @@ public:
     prenom=p;
     mail=m;
     }
-    ostream& operator<<( A& x )
-{
-        ostream& out;
-	out << x.y << endl;
+    friend ostream& operator<<(ostream& out ,  personne& e )
+    {
+
+        out<< e.nom<< e.prenom <<e.mail<<e.id;
 	return out;
-}
+	}
 
 };
-class etudiant :public personne{
-public :
-    int numinsc;
-    etudiant(){};
-    etudiant(int i , string  n, string  p , string  m,int num): personne(i,n,p,m){
-    numinsc=num;
-    };
-    ostream& operator<<( A& x )
-{
-        ostream& out;
-	out << x.y << endl;
-	return out;
-}
 
-};
-class enseignant :public personne{
-public :
-    int cnss;
-    enseignant(){};
-    enseignant(int i , string  n, string  p , string  m,int cn): personne(i,n,p,m){
-    cnss=cn;
-    };
-    ostream& operator<<( A& x )
-{
-        ostream& out;
-	out << x.y << endl;
-	return out;
-}
-};
+
 
 #endif // PERSONNE_H_INCLUDED

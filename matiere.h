@@ -1,5 +1,7 @@
 #ifndef MATIERE_H_INCLUDED
 #define MATIERE_H_INCLUDED
+#include <iostream>
+
 #include"personne.h"
 class matiere {
 public :
@@ -14,13 +16,10 @@ public :
         coef=co;
         ens=e;
     }
-    ostream& operator<<( A& x )
-{
-        ostream& out;
-	out << x.y << endl;
-	return out;
-}
+friend    ostream& operator<<( ostream& out ,const matiere m  ){
+
+        out << m.idmat<< m.nommat<<m.coef ;
+        return out;
+    }
 };
-
-
 #endif // MATIERE_H_INCLUDED

@@ -34,8 +34,14 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
-		<Unit filename="../ex3/etudiant.h" />
+		<Unit filename="enseignant.h" />
+		<Unit filename="etudiant.h" />
+		<Unit filename="groupe.h" />
+		<Unit filename="groupemodule.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="matiere.h" />
+		<Unit filename="note.h" />
+		<Unit filename="personne.h" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>
